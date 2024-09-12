@@ -1,0 +1,17 @@
+*.jar
+*.class
+*.log
+*.out
+*.txt
+*.csv
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
