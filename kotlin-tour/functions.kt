@@ -29,6 +29,10 @@ fun main() {
     testLambdaInvokeSeparately()
     testLambdaAsParameter()
     do_lambda_practice()
+
+    val result = processUser("Alice", 30)
+    println("processUser result: $result")
+    printSystemInfo()
 }
 
 fun greet(name: String): String {
@@ -177,3 +181,26 @@ fun do_lambda_practice() {
     repeatN(5) { println("Hello, world!") }
 }
 
+// 有显式返回值的 lambda 表达式
+val processUser = { name: String, age: Int ->
+    println("Processing user data...")
+    val greeting = "Hello, $name!"
+    val ageGroup = when {
+        age < 18 -> "minor"
+        age < 65 -> "adult"
+        else -> "senior"
+    }
+    println("Age group determined.")
+    "$greeting You are a $ageGroup." // 这是 lambda 的返回值
+}
+
+// 没有显式返回值的 lambda 表达式
+// 操，原来 lambda 可以有多行啊 
+val printSystemInfo = {
+    println("System Information:")
+    println("OS: ${System.getProperty("os.name")}")
+    println("Java Version: ${System.getProperty("java.version")}")
+    println("Available Processors: ${Runtime.getRuntime().availableProcessors()}")
+    println("Free Memory: ${Runtime.getRuntime().freeMemory() / 1024 / 1024} MB")
+    // 这个 lambda 没有显式返回值，默认返回 Unit（相当于 void）
+}
