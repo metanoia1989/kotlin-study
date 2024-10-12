@@ -12,8 +12,8 @@ fun MainNavigation() {
     NavHost(navController = navController, startDestination = "main") {
         composable("main") { MainScreen(navController) }
         composable("basic_compose") { BasicComposeScreen() }
+        composable("dice_roller") { DiceRollerScreen() }
 
-        composable("text") { TextScreen() }
         composable("button") { ButtonScreen() }
         composable("image") { ImageScreen() }
         composable("list") { ListScreen() }

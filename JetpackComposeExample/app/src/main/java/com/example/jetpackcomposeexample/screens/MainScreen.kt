@@ -16,8 +16,8 @@ import androidx.navigation.NavHostController
 fun MainScreen(navController: NavHostController) {
     val items = listOf(
         "基础compose组件效果演示" to "basic_compose",
+        "掷骰子游戏" to "dice_roller",
 
-        "文本组件" to "text",
         "按钮组件" to "button",
         "图片组件" to "image",
         "列表组件" to "list",
