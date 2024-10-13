@@ -13,9 +13,9 @@ fun MainNavigation() {
         composable("main") { MainScreen(navController) }
         composable("basic_compose") { BasicComposeScreen() }
         composable("dice_roller") { DiceRollerScreen() }
+        composable("lemonade") { LemonadeScreen() }
+        composable("calculate_tip") { CalculateTipScreen() }
 
-        composable("button") { ButtonScreen() }
-        composable("image") { ImageScreen() }
         composable("list") { ListScreen() }
         // 添加更多页面...
     }

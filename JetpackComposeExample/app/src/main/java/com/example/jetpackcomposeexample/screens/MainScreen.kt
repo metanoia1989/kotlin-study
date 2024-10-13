@@ -17,9 +17,9 @@ fun MainScreen(navController: NavHostController) {
     val items = listOf(
         "基础compose组件效果演示" to "basic_compose",
         "掷骰子游戏" to "dice_roller",
+        "柠檬水制作" to "lemonade",
+        "小费计算器" to "calculate_tip",
 
-        "按钮组件" to "button",
-        "图片组件" to "image",
         "列表组件" to "list",
         // 添加更多项目...
         "文本组件2" to "text2"
