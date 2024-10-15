@@ -19,10 +19,7 @@ fun MainScreen(navController: NavHostController) {
         "掷骰子游戏" to "dice_roller",
         "柠檬水制作" to "lemonade",
         "小费计算器" to "calculate_tip",
-
-        "列表组件" to "list",
-        // 添加更多项目...
-        "文本组件2" to "text2"
+        "艺术空间" to "art_space",
     )
 
     LazyColumn {

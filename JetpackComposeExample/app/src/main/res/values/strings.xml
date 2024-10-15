@@ -21,4 +21,8 @@
     <string name="tip_amount">Tip Amount: %s</string>
     <string name="how_was_the_service">Tip Percentage</string>
     <string name="round_up_tip">Round up tip?</string>
+
+    <!--  艺术空间  -->
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
 </resources>

@@ -15,8 +15,7 @@ fun MainNavigation() {
         composable("dice_roller") { DiceRollerScreen() }
         composable("lemonade") { LemonadeScreen() }
         composable("calculate_tip") { CalculateTipScreen() }
-
-        composable("list") { ListScreen() }
+        composable("art_space") { ArtSpaceScreen() }
         // 添加更多页面...
     }
 }
