@@ -17,7 +17,6 @@ class MainActivity : ComponentActivity() {
             JetpackComposeExampleTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
                 ) {
                     MainNavigation()
                 }

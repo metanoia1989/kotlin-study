@@ -21,6 +21,7 @@ fun MainScreen(navController: NavHostController) {
         "小费计算器" to "calculate_tip",
         "艺术空间" to "art_space",
         "自我肯定集" to "affirmation",
+        "小狗列表" to "woof",
     )
 
     LazyColumn {

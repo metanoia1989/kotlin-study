@@ -17,6 +17,7 @@ fun MainNavigation() {
         composable("calculate_tip") { CalculateTipScreen() }
         composable("art_space") { ArtSpaceScreen() }
         composable("affirmation") { AffirmationScreen() }
+        composable("woof") { WoofScreen() }
         // 添加更多页面...
     }
 }
