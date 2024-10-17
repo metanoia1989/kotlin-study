@@ -18,6 +18,7 @@ fun MainNavigation() {
         composable("art_space") { ArtSpaceScreen() }
         composable("affirmation") { AffirmationScreen() }
         composable("woof") { WoofScreen() }
+        composable("topics") { TopicsScreen() }
         // 添加更多页面...
     }
 }
