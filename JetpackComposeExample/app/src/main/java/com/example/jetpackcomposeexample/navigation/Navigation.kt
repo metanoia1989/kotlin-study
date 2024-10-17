@@ -4,7 +4,16 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.jetpackcomposeexample.screens.*
+import com.example.jetpackcomposeexample.screens.AffirmationScreen
+import com.example.jetpackcomposeexample.screens.ArtSpaceScreen
+import com.example.jetpackcomposeexample.screens.BasicComposeScreen
+import com.example.jetpackcomposeexample.screens.CalculateTipScreen
+import com.example.jetpackcomposeexample.screens.DiceRollerScreen
+import com.example.jetpackcomposeexample.screens.HerosScreen
+import com.example.jetpackcomposeexample.screens.LemonadeScreen
+import com.example.jetpackcomposeexample.screens.MainScreen
+import com.example.jetpackcomposeexample.screens.TopicsScreen
+import com.example.jetpackcomposeexample.screens.WoofScreen
 
 @Composable
 fun MainNavigation() {
@@ -19,6 +28,7 @@ fun MainNavigation() {
         composable("affirmation") { AffirmationScreen() }
         composable("woof") { WoofScreen() }
         composable("topics") { TopicsScreen() }
+        composable("heros") { HerosScreen() }
         // 添加更多页面...
     }
 }

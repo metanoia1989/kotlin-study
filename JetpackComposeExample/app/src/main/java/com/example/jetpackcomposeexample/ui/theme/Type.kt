@@ -17,6 +17,11 @@ val AbrilFatface = FontFamily(
     Font(R.font.abril_fatface_regular),
 )
 
+val Cabin = FontFamily(
+    Font(R.font.cabin_regular, FontWeight.Normal),
+    Font(R.font.cabin_bold, FontWeight.Bold),
+)
+
 // Set of Material typography styles to start with
 val Typography = Typography(
     displayLarge = TextStyle(
@@ -38,7 +43,24 @@ val Typography = Typography(
         fontFamily = Montserrat,
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp,
-    )
+    ),
+
+    titleLarge = TextStyle(
+        fontFamily = Cabin,
+        fontWeight = FontWeight.Normal,
+        fontSize = 30.sp,
+    ),
+    titleMedium = TextStyle(
+        fontFamily = Cabin,
+        fontWeight = FontWeight.Bold,
+        fontSize = 20.sp,
+    ),
+    titleSmall = TextStyle(
+        fontFamily = Cabin,
+        fontWeight = FontWeight.Bold,
+        fontSize = 20.sp,
+    ),
+//    titleSmall =
     /* Other default text styles to override
     titleLarge = TextStyle(
         fontFamily = FontFamily.Default,

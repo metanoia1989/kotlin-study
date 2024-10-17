@@ -25,6 +25,7 @@ fun MainScreen(navController: NavHostController) {
         "自我肯定集" to "affirmation",
         "小狗列表" to "woof",
         "课程主题" to "topics",
+        "英雄们" to "heros",
     )
 
     Surface(

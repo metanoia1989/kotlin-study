@@ -6,6 +6,7 @@ import androidx.compose.ui.unit.dp
 
 
 val Shapes = Shapes(
-    small = RoundedCornerShape(50.dp),
+    small = RoundedCornerShape(8.dp),
     medium = RoundedCornerShape(bottomStart = 16.dp, topEnd = 16.dp), // 卡片会默认使用 Shapes.medium
+    large = RoundedCornerShape(18.dp),
 )
