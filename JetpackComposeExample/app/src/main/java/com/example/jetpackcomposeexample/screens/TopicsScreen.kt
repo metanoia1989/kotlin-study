@@ -96,8 +96,10 @@ fun TopicItem(topic: Topic, modifier: Modifier = Modifier) {
             painter = painterResource(topic.cover),
             contentScale = ContentScale.Crop,
             contentDescription = null,
-            modifier = Modifier.width(68.dp)
-                .height(68.dp)
+            modifier = Modifier
+                .aspectRatio(1f) // 强制组件保持 1:1 的宽高比
+//                .width(68.dp)
+//                .height(68.dp)
         )
 
         TopicInformation(

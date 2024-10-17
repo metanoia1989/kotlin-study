@@ -2,10 +2,12 @@ package com.example.jetpackcomposeexample.screens
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -108,6 +110,10 @@ fun WoofTopAppBar(modifier: Modifier = Modifier) {
 @Composable
 fun DogItem(dog: Dog, modifier: Modifier = Modifier) {
     var expanded by remember { mutableStateOf(false) }
+    val color by animateColorAsState(
+        targetValue = if (expanded) MaterialTheme.colorScheme.tertiaryContainer
+        else MaterialTheme.colorScheme.primaryContainer
+    )
     Card(
 //        shape = Shapes.medium,
         modifier = modifier
@@ -120,6 +126,7 @@ fun DogItem(dog: Dog, modifier: Modifier = Modifier) {
                         stiffness = Spring.StiffnessMedium,
                     )
                 )
+                .background(color)
         ) {
             Row(
                 modifier = Modifier
