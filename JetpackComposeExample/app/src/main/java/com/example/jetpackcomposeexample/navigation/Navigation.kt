@@ -12,6 +12,7 @@ import com.example.jetpackcomposeexample.screens.DiceRollerScreen
 import com.example.jetpackcomposeexample.screens.HerosScreen
 import com.example.jetpackcomposeexample.screens.LemonadeScreen
 import com.example.jetpackcomposeexample.screens.MainScreen
+import com.example.jetpackcomposeexample.screens.RaceTrackerScreen
 import com.example.jetpackcomposeexample.screens.TopicsScreen
 import com.example.jetpackcomposeexample.screens.WoofScreen
 
@@ -29,7 +30,7 @@ fun MainNavigation() {
         composable("woof") { WoofScreen() }
         composable("topics") { TopicsScreen() }
         composable("heros") { HerosScreen() }
-        // 添加更多页面...
+        composable("race_tracker") { RaceTrackerScreen() }
     }
 }
 

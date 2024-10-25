@@ -22,6 +22,12 @@ val Cabin = FontFamily(
     Font(R.font.cabin_bold, FontWeight.Bold),
 )
 
+val Poppins = FontFamily(
+    Font(R.font.poppins_regular, FontWeight.Normal),
+    Font(R.font.poppins_bold, FontWeight.Bold),
+    Font(R.font.poppins_light, FontWeight.Light),
+)
+
 // Set of Material typography styles to start with
 val Typography = Typography(
     displayLarge = TextStyle(
@@ -34,11 +40,11 @@ val Typography = Typography(
         fontWeight = FontWeight.Bold,
         fontSize = 20.sp,
     ),
-    labelSmall = TextStyle(
-        fontFamily = Montserrat,
-        fontWeight = FontWeight.Bold,
-        fontSize = 14.sp,
-    ),
+//    labelSmall = TextStyle(
+//        fontFamily = Montserrat,
+//        fontWeight = FontWeight.Bold,
+//        fontSize = 14.sp,
+//    ),
     bodyLarge = TextStyle(
         fontFamily = Montserrat,
         fontWeight = FontWeight.Normal,
@@ -60,6 +66,23 @@ val Typography = Typography(
         fontWeight = FontWeight.Bold,
         fontSize = 20.sp,
     ),
+
+    // Poppins 字体
+    labelLarge = TextStyle(
+        fontFamily = Poppins,
+        fontWeight = FontWeight.Normal,
+        fontSize = 30.sp,
+    ),
+    labelMedium = TextStyle(
+        fontFamily = Poppins,
+        fontWeight = FontWeight.Bold,
+        fontSize = 20.sp,
+    ),
+    labelSmall = TextStyle(
+        fontFamily = Poppins,
+        fontWeight = FontWeight.Normal,
+        fontSize = 14.sp,
+    )
 //    titleSmall =
     /* Other default text styles to override
     titleLarge = TextStyle(
