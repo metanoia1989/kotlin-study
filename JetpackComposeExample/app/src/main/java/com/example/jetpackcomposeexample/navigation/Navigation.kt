@@ -12,6 +12,7 @@ import com.example.jetpackcomposeexample.screens.DiceRollerScreen
 import com.example.jetpackcomposeexample.screens.HerosScreen
 import com.example.jetpackcomposeexample.screens.LemonadeScreen
 import com.example.jetpackcomposeexample.screens.MainScreen
+import com.example.jetpackcomposeexample.screens.MarsPhotosScreen
 import com.example.jetpackcomposeexample.screens.RaceTrackerScreen
 import com.example.jetpackcomposeexample.screens.TopicsScreen
 import com.example.jetpackcomposeexample.screens.WoofScreen
@@ -31,6 +32,7 @@ fun MainNavigation() {
         composable("topics") { TopicsScreen() }
         composable("heros") { HerosScreen() }
         composable("race_tracker") { RaceTrackerScreen() }
+        composable("mars_photos") { MarsPhotosScreen() }
     }
 }
 

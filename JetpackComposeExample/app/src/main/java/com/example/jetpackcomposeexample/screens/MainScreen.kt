@@ -27,6 +27,7 @@ fun MainScreen(navController: NavHostController) {
         "课程主题" to "topics",
         "英雄们" to "heros",
         "双雄竞速" to "race_tracker",
+        "火星图片" to "mars_photos",
     )
 
     Surface(
